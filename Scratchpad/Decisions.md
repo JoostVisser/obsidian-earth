@@ -22,8 +22,3 @@ Some general tips that can help out:
 3. When choosing between the status quo and a new state, often it's worth it to go for the new if only for the experience gained.
 
 It's worth practicing becoming decisive by starting with the small decisions and then slowly building up towards large decisions. You learn to quickly evaluate decisions and figure out what's actually important in making those decisions (the elements of the decision that actually matter to you). 
-
-# References
-**Source:** https://www.youtube.com/watch?v=veMExOmq5zA.
-- (Take this source with a grain of salt, of course, the person itself has some dangerous advice. Just pick up the positive advice there, there's some smart stuff in between the weird stuff.)
-
