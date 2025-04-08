@@ -1,0 +1,9 @@
+{
+  "spellcheck": true,
+  "useTab": false,
+  "promptDelete": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Notes/Fleeting Notes",
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "./"
+}
