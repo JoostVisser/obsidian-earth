@@ -1,1 +1,1 @@
-Brave/Hero from FrierenAw,
+Brave/Hero from FrierenA

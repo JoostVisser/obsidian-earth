@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Scratchpad/Songs I want to learn on the piano.md",
+                "file": "Daily Notes/2025-04-08 (Tue).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Songs I want to learn on the piano"
+              "title": "2025-04-08 (Tue)"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Scratchpad/Songs I want to learn on the piano.md",
+                "file": "Daily Notes/2025-04-08 (Tue).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Songs I want to learn on the piano"
+              "title": "Outline of 2025-04-08 (Tue)"
             }
           },
           {
@@ -182,8 +182,8 @@
   },
   "active": "268d6c2ada5ba80f",
   "lastOpenFiles": [
-    "Daily Notes/2025-04-08 (Tue).md",
     "Scratchpad/Songs I want to learn on the piano.md",
+    "Daily Notes/2025-04-08 (Tue).md",
     "README.md",
     "Projects/Travel Blog/Caminito Del Rey.md",
     "Projects/Travel Blog",
