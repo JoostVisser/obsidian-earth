@@ -13,3 +13,6 @@ The gorges were amazing; it's reaally difficult to show the scale of the gorges,
 There was also the occasional bridge or train track, making for some fancy pictures.
 
 Finally, I ended up the day at the restaurant El Mirador (the view), because that location also happens to have a lake with lots of small green hills. The food was great (8/10) and the views were even better.
+
+Video suggestions:
+1. 
