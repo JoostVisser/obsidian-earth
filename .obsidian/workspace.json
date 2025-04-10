@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1daed2239f1c498e",
+        "id": "3f52d10e2f8a1ed5",
         "type": "tabs",
         "children": [
           {
-            "id": "268d6c2ada5ba80f",
+            "id": "79dff95c18bab457",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -180,10 +180,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "268d6c2ada5ba80f",
+  "active": "79dff95c18bab457",
   "lastOpenFiles": [
-    "Projects/Travel Blog/Caminito Del Rey.md",
+    "().md",
     "Daily Notes/2025-04-10 (Thu).md",
+    "Projects/Travel Blog/Caminito Del Rey.md",
     "Daily Notes/2025-04-09 (Wed).md",
     "Daily Notes/2025-04-08 (Tue).md",
     "Scratchpad/Songs I want to learn on the piano.md",
