@@ -20,13 +20,12 @@ a small server that runs a web application. It only supports certain languages (
 
     [WebApp pricing](https://azure.microsoft.com/en-us/pricing/details/app-service/linux/).
     We only highlight plans relevant to our use case.
-
-
-  | Plan            | Price per month | RAM   | CPUs | Storage | Performance |
-  | --------------- | --------------- | ----- | ---- | ------- | ----------- |
-  | Basic B2        | $25             | 3.5GB | 2    | 30GB    | 100 ACU     |
-  | Premium v3 P0V3 | $61             | 4GB   | 1    | 250GB   | 195 ACU     |
-  | Premium v3 P1V3 | $123            | 8GB   | 2    | 250GB   | 195 ACU     |
+    
+      | Plan            | Price per month | RAM   | CPUs | Storage | Performance |
+      | --------------- | --------------- | ----- | ---- | ------- | ----------- |
+      | Basic B2        | $25             | 3.5GB | 2    | 30GB    | 100 ACU     |
+      | Premium v3 P0V3 | $61             | 4GB   | 1    | 250GB   | 195 ACU     |
+      | Premium v3 P1V3 | $123            | 8GB   | 2    | 250GB   | 195 ACU     |
 
     It is possible to run multiple app services on the same "App Service Plan",
     so then multiple web-apps share the same computer.
@@ -73,25 +72,25 @@ result:
     - 359 170 executions
 
     Execution Units are given in MB-milliseconds. To convert to GB-seconds, divide by 1 024 000.
-
-   Therefore, we roughly use last month on production:
-   - 42 060 GB-s
-   - 359 170 executions
-
-   After subtracting the free 100 000 GB-s and 250 000 executions, we roughly
-   have to pay €0.04 for production per month without any always ready instance.
-   (If we do not take into account the free units, we would get a monthly fee of around €1.20 a month.)
-
-
-   The always ready pricing is as follows:
-   - €0.0000038/GB-s baseline (depends on RAM Provisioned)
-   - €0.0000149/GB-s Execution Time (depends on RAM used)
-   - €0.370439 per million executions
-
-   Per always ready instance of 4GB, this would result in a baseline price of:
-   - $\texteuro 0.0000038 * (60*60*24*30) \text{sec/month} * 4 \text{GB} = \texteuro 39.40$ a month
-
-   (The price for execution time and executions are less than €1, so negligible.)
+    
+       Therefore, we roughly use last month on production:
+       - 42 060 GB-s
+       - 359 170 executions
+    
+       After subtracting the free 100 000 GB-s and 250 000 executions, we roughly
+       have to pay €0.04 for production per month without any always ready instance.
+       (If we do not take into account the free units, we would get a monthly fee of around €1.20 a month.)
+    
+    
+       The always ready pricing is as follows:
+       - €0.0000038/GB-s baseline (depends on RAM Provisioned)
+       - €0.0000149/GB-s Execution Time (depends on RAM used)
+       - €0.370439 per million executions
+    
+       Per always ready instance of 4GB, this would result in a baseline price of:
+       - $\texteuro 0.0000038 * (60*60*24*30) \text{sec/month} * 4 \text{GB} = \texteuro 39.40$ a month
+    
+       (The price for execution time and executions are less than €1, so negligible.)
 
 </details>
 
@@ -125,32 +124,68 @@ There's a variety of prices for blob storage
     For [Blob Storage](https://azure.microsoft.com/en-gb/pricing/details/storage/blobs/#pricing), there are multiple price tiers with different trade offs.
     
     The relevant ones for us:
-    - Hot: €0.0204 per GB, 
-    it's a bit more difficult to calculate, as it uses two metrics:
-    - €0.000025 GB-s (seconds compute time for every GB of memory used)
-    - €0.371 per million function executions
+    
+    | Storage tier | Price per GB | Write (per 10 000) | Read (per 10 000) | Read (per GB) |
+    | ------------ | ------------ | ------------------ | ----------------- | ------------- |
+    | Hot          | €0.0204      | €0.0602            | €0.0047           | Free          |
+    | Cool¹        | €0.00927     | €0.1204            | €0.0121           | €0.0093       |
+    ¹There exists a penalty for deleting files. If you delete it before 30 days, you will get charged for 30 days.
+    
+    
+    For a cost estimation, suppose we have 3000 routes a month, 70% of which succeed and result a protobuf binary of an average 3MB. So, in total, this would result in:
+    - 9GB, 2100 writes, 2100 reads
+    - Hot: €0.1836 for storage, and  $0.012642 + 0.000987 + 0.0 \approx \texteuro 0.01$ for monthly read/write fee.
+    - Cold: €0.08343 for storage, and $0.025284 + 0.002541 + 0.0837 \approx \texteuro 0.109$ for monthly read/write fee.
+    
+    Since we keep storage of previous months (until say a few years), cold storage would remain cheaper for us, although the price is kinda negligible.
 </details>
 
 
 
-| Storage tier | Price per GB | Write (per 10 000) | Read (per 10 000) | Read (per GB) |
-| ------------ | ------------ | ------------------ | ----------------- | ------------- |
-| Hot          | €0.0204      | €0.0602            | €0.0047           | Free          |
-| Cool¹        | €0.00927     | €0.1204            | €0.0121           | €0.0093       |
-¹There exists a penalty for deleting files. If you delete it before 30 days, you will get charged for 30 days.
-
-
-For a cost estimation, suppose we have 3000 routes a month, 70% of which succeed and result a protobuf binary of an average 3MB. So, in total, this would result in:
-- 9GB, 2100 writes, 2100 reads
-- Hot: €0.1836 for storage, and  $0.012642 + 0.000987 + 0.0 \approx \texteuro 0.01$ for monthly read/write fee.
-- Cold: €0.08343 for storage, and $0.025284 + 0.002541 + 0.0837 \approx \texteuro 0.109$ for monthly read/write fee.
-
-Since we keep storage of previous months (until say a few years), cold storage would remain cheaper for us, although the price is kinda negligible.
-
 #### Databases
 
-A database is a service
+A database is a service that is made to store data with a higher access frequency than the database storage options. In Azure, these are stored on SSDs while the other storage options are stored on hard drive, and other optimizations are made to improve latency for reading/writing.
 
+In general, there are two types of databases:
+- **SQL Databases:** these store data in tables with rows and columns. You can relate certain data to other data. Also known as relational databases.
+- **NoSQL databases**: these store data in documents, which can be retrieved by their unique ID and contain basically key-value pairs like JSON. 
+
+The most popular SQL database is **PostgreSQL** and most popular No-SQL database is MongoDB.
+There are also Azure specific alternatives: Azure SQL Database (SQL) and **CosmosDB** (No-SQL).
+
+Since we're not really interested in relational databases, but instead just want to store the state of a run inside a database, we're looking at NoSQL databases. MongoDB does not really exist in Azure, so instead we'll look at CosmosDB.
+
+
+<details>
+    <summary>Database pricing</summary>
+
+     Pricing is a little difficult to compare, because they use different units.
+    
+    The [PostgresSQL](https://azure.microsoft.com/en-us/pricing/details/postgresql/server/) database costs us:
+    - €24.609 a month for 1vCore and 2GiB RAM
+    -  €0.102 per GB per month
+
+    [CosmosDB](https://azure.microsoft.com/en-us/pricing/details/cosmos-db/autoscale-provisioned/) costs:
+    - 
+
+    For [Blob Storage](https://azure.microsoft.com/en-gb/pricing/details/storage/blobs/#pricing), there are multiple price tiers with different trade offs.
+    
+    The relehttps://azure.microsoft.com/en-us/pricing/details/postgresql/server/vant ones for us:
+    
+    | Storage tier | Price per GB | Write (per 10 000) | Read (per 10 000) | Read (per GB) |
+    | ------------ | ------------ | ------------------ | ----------------- | ------------- |
+    | Hot          | €0.0204      | €0.0602            | €0.0047           | Free          |
+    | Cool¹        | €0.00927     | €0.1204            | €0.0121           | €0.0093       |
+    ¹There exists a penalty for deleting files. If you delete it before 30 days, you will get charged for 30 days.
+    
+    
+    For a cost estimation, suppose we have 3000 routes a month, 70% of which succeed and result a protobuf binary of an average 3MB. So, in total, this would result in:
+    - 9GB, 2100 writes, 2100 reads
+    - Hot: €0.1836 for storage, and  $0.012642 + 0.000987 + 0.0 \approx \texteuro 0.01$ for monthly read/write fee.
+    - Cold: €0.08343 for storage, and $0.025284 + 0.002541 + 0.0837 \approx \texteuro 0.109$ for monthly read/write fee.
+    
+    Since we keep storage of previous months (until say a few years), cold storage would remain cheaper for us, although the price is kinda negligible.
+</details>
 
 
 

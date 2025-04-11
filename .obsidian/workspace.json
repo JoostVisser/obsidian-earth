@@ -29,7 +29,7 @@
               "state": {
                 "file": "Scratchpad/Azure Architectures.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "Azure Architectures"
