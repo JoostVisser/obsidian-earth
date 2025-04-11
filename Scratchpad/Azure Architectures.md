@@ -89,7 +89,7 @@ result:
    - €0.370439 per million executions
 
    Per always ready instance of 4GB, this would result in a baseline price of:
-   - $€ 0.0000038 * (60*60*24*30) \text{sec/month} * 4 \text{GB} = €39.40$ a month
+   - $\texteuro 0.0000038 * (60*60*24*30) \text{sec/month} * 4 \text{GB} = \texteuro 39.40$ a month
 
    (The price for execution time and executions are less than €1, so negligible.)
 
@@ -129,17 +129,23 @@ There's a variety of prices for blob storage
     it's a bit more difficult to calculate, as it uses two metrics:
     - €0.000025 GB-s (seconds compute time for every GB of memory used)
     - €0.371 per million function executions
-
 </details>
 
 
 
 | Storage tier | Price per GB | Write (per 10 000) | Read (per 10 000) | Read (per GB) |
 | ------------ | ------------ | ------------------ | ----------------- | ------------- |
-| Hot          |              | €0.0602            |                   |               |
-| Cool         |              | €0.0047            |                   |               |
+| Hot          | €0.0204      | €0.0602            | €0.0047           | Free          |
+| Cool¹        | €0.00927     | €0.1204            | €0.0121           | €0.0093       |
+¹There exists a penalty for deleting files. If you delete it before 30 days, you will get charged for 30 days.
 
-For a cost estimation, suppose we have 2000 routes a month, which all succeed in a protobuf binary 
+
+For a cost estimation, suppose we have 3000 routes a month, 70% of which succeed and result a protobuf binary of an average 3MB. So, in total, this would result in:
+- 9GB, 2100 writes, 2100 reads
+- Hot: €0.1836 for storage, and  $0.012642 + 0.000987 + 0.0 \approx \texteuro 0.01$ for monthly read/write fee.
+- Cold: €0.08343 for storage, and $0.025284 + 0.002541 + 0.0837 \approx \texteuro 0.109$ for monthly read/write fee.
+
+Since we keep storage of previous months (until say a few years), cold storage would remain cheaper for us, although the price is kinda negligible.
 
 #### Databases
 
