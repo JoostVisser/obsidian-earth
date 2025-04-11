@@ -166,25 +166,9 @@ Since we're not really interested in relational databases, but instead just want
     -  €0.102 per GB per month
 
     [CosmosDB](https://azure.microsoft.com/en-us/pricing/details/cosmos-db/autoscale-provisioned/) costs:
-    - 
+    - asdf
 
-    For [Blob Storage](https://azure.microsoft.com/en-gb/pricing/details/storage/blobs/#pricing), there are multiple price tiers with different trade offs.
-    
-    The relehttps://azure.microsoft.com/en-us/pricing/details/postgresql/server/vant ones for us:
-    
-    | Storage tier | Price per GB | Write (per 10 000) | Read (per 10 000) | Read (per GB) |
-    | ------------ | ------------ | ------------------ | ----------------- | ------------- |
-    | Hot          | €0.0204      | €0.0602            | €0.0047           | Free          |
-    | Cool¹        | €0.00927     | €0.1204            | €0.0121           | €0.0093       |
-    ¹There exists a penalty for deleting files. If you delete it before 30 days, you will get charged for 30 days.
-    
-    
-    For a cost estimation, suppose we have 3000 routes a month, 70% of which succeed and result a protobuf binary of an average 3MB. So, in total, this would result in:
-    - 9GB, 2100 writes, 2100 reads
-    - Hot: €0.1836 for storage, and  $0.012642 + 0.000987 + 0.0 \approx \texteuro 0.01$ for monthly read/write fee.
-    - Cold: €0.08343 for storage, and $0.025284 + 0.002541 + 0.0837 \approx \texteuro 0.109$ for monthly read/write fee.
-    
-    Since we keep storage of previous months (until say a few years), cold storage would remain cheaper for us, although the price is kinda negligible.
+    It's difficult to say what it exactly costs, but for Serverless for 100k requests it costed us about €0.05 when using serverless, which is including the storage costs (of which we have 1.2 GiB).
 </details>
 
 
