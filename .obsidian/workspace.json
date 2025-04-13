@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Scratchpad/Azure Architectures.md",
+                "file": "Daily Notes/2025-04-13 (Sun).md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Azure Architectures"
+              "title": "2025-04-13 (Sun)"
             }
           }
         ],
@@ -196,8 +196,9 @@
   },
   "active": "349dcb9b78836918",
   "lastOpenFiles": [
-    "Daily Notes/2025-04-11 (Fri).md",
     "Scratchpad/Azure Architectures.md",
+    "Daily Notes/2025-04-13 (Sun).md",
+    "Daily Notes/2025-04-11 (Fri).md",
     "Daily Notes/2025-04-10 (Thu).md",
     "Templates/daily notes template.md",
     "Azure discoveries.md",
@@ -227,7 +228,6 @@
     "Daily Notes/Fleeting Notes/Anime watchlist.md",
     "004 Archive/Find-a-job project.md",
     "Notes/Daily Notes/2023-04-29 (Sat).md",
-    "Notes/Daily Notes/2023-04-14 (Fri).md",
     "Fleeting Notes"
   ]
 }
