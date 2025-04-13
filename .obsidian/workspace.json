@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3f52d10e2f8a1ed5",
+        "id": "e4af4cc54bcbb07b",
         "type": "tabs",
         "children": [
           {
-            "id": "79dff95c18bab457",
+            "id": "6b1a2a4ce9c84843",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily Notes/2025-04-13 (Sun).md",
+                "file": "Projects/Travel Blog/Caminito Del Rey (Mar 15).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-04-13 (Sun)"
+              "title": "Caminito Del Rey (Mar 15)"
             }
           }
         ]
@@ -179,16 +179,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "79dff95c18bab457",
+  "active": "6b1a2a4ce9c84843",
   "lastOpenFiles": [
+    "Projects/Travel Blog/Lagos (Mar 17 - Mar 23).md",
+    "Daily Notes/2025-04-13 (Sun).md",
+    "Projects/Travel Blog/Caminito Del Rey (Mar 15).md",
     "Daily Notes/2025-04-11 (Fri).md",
     "Daily Notes/2025-04-10 (Thu).md",
-    "Daily Notes/2025-04-13 (Sun).md",
     "Scratchpad/Azure Architectures.md",
     "Templates/daily notes template.md",
     "Azure discoveries.md",
     "().md",
-    "Projects/Travel Blog/Caminito Del Rey.md",
     "Daily Notes/2025-04-09 (Wed).md",
     "Daily Notes/2025-04-08 (Tue).md",
     "Scratchpad/Songs I want to learn on the piano.md",
@@ -212,7 +213,6 @@
     "Daily Notes/Fleeting Notes/Visa - Australia.md",
     "Daily Notes/Fleeting Notes/Anime watchlist.md",
     "004 Archive/Find-a-job project.md",
-    "Notes/Daily Notes/2023-04-29 (Sat).md",
     "Fleeting Notes"
   ]
 }
