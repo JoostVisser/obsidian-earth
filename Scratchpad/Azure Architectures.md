@@ -140,8 +140,6 @@ There's a variety of prices for blob storage
     Since we keep storage of previous months (until say a few years), cold storage would remain cheaper for us, although the price is kinda negligible.
 </details>
 
-
-
 #### Databases
 
 A database is a service that is made to store data with a higher access frequency than the database storage options. In Azure, these are stored on SSDs while the other storage options are stored on hard drive, and other optimizations are made to improve latency for reading/writing.
@@ -165,19 +163,25 @@ Since we're not really interested in relational databases, but instead just want
     - €24.609 a month for 1vCore and 2GiB RAM
     -  €0.102 per GB per month
 
-    [CosmosDB](https://azure.microsoft.com/en-us/pricing/details/cosmos-db/autoscale-provisioned/) costs:
-    - asdf
+    [CosmosDB Serverless](https://azure.microsoft.com/en-us/pricing/details/cosmos-db/serverless/) costs:
+    - €0.263 per million requests
+    - Storage: €0.232 per GB per month
 
     It's difficult to say what it exactly costs, but for Serverless for 100k requests it costed us about €0.05 when using serverless, which is including the storage costs (of which we have 1.2 GiB).
+
+    [CosmosDB Provisioned](https://azure.microsoft.com/en-us/pricing/details/cosmos-db/standard-provisioned/) costs:
+    - €5.41 per 100 requests/s per month, with a minumum of 400 requests/s: €21.634 per month
+    - Storage: €0.232 per GB per month
+    
+    This is useful for more stable / faster database performance for an increased price.
+    
+    Both CosmosDB plans comes with free database backups.
+
 </details>
 
+#### Triggers
 
-
-
-
-
-
-
+Depending on the architecture we choose to use, 
 
 
 
