@@ -111,7 +111,12 @@ active instance, the price per month is the lower bound of the costs.
 
 (As a side-note, since we have disabled scale-out in our current setup, it's
 almost equivalent to using the P1V3 app-service plan, but then making it more
-than twice as expensive.)
+than twice as expensive.)1. Azure Functions -> Event Grid -> Azure Functions architecture
+2. Flex Consumption plan with 1x always-ready instance (4GB)
+3. Keep binaries for 1 year, following cold storage plan.
+4. Use auto-scaling database.
+
+Then we'll have the following production costs:
 
 ##### Comparison
 
@@ -407,3 +412,11 @@ In our scenario, the compute resources are the significant factor in the cost of
 
 In the event of an increasing production load (x10), the storage costs start to
 play a more significant role in the overall cost of the infrastructure.
+
+
+
+| Service               | Cost/month [1x prod. load] | Cost/month [10x prod. load] | Cost/month [100x prod. load] |
+| --------------------- | -------------------------- | --------------------------- | ---------------------------- |
+| Queue Storage         | €0.01                      | €0.13                       | €1.37                        |
+| Event Grid            | €0.00                      | €0.00                       | €0.39                        |
+| CosmosDB (serverless) | €0.08                      | €0.60                       | €6.15                        |
