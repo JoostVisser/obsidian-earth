@@ -286,7 +286,7 @@ potential speed improvement.
 
 #### Monthly usage estimate
 
-For our current production usage, we'll use the actual estimate of 3650 runs a month, see the details of
+For our current production usage, we'll use the actual estimate of 10000 runs a month, see the details of
 the [database usage estimates](#database-usage-estimate) for more detail.
 
 Since two out of three runs succeeded, we'll use an estimate of 2500 runs that
