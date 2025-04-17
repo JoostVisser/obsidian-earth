@@ -111,5 +111,14 @@
       ],
       "key": "/"
     }
+  ],
+  "editor:table-row-after": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "ArrowDown"
+    }
   ]
 }
