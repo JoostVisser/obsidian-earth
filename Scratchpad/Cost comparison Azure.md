@@ -50,11 +50,11 @@ Where $43.07\text{ billion MB-ms} / 1\ 024\ 000 = 42 060\text{ GB-s}$.
 
 Therefore:
 
-
-| 1x prod. load | 10x prod. load |
-| ------------- | -------------- |
-|               |                |
-
+| Load            | Computation (GB-s) | Function executions |
+| --------------- | ------------------ | ------------------- |
+| 1x prod. load   | 42 060             | 359 170             |
+| 10x prod. load  | 420 600            | 3 591 700           |
+| 100x prod. load | 4 206 000          | 35 917 000          |
 
 #### Azure Web Apps
 
@@ -119,7 +119,7 @@ than twice as expensive.)
 | ------------------------------------------------------------------ | -------------------------- | --------------------------- | ---------------------------- |
 | Azure Functions (Flex Consumption)                                 | €0.04                      | €9.25                       |                              |
 | Azure Functions (Flex Consumption) + 1 always ready instance (4GB) | €39.78                     | €46.53                      |                              |
-| Azure Functions (Premium, current plan)                            | €271.72                    | €300 - €500                 |                              |
+| Azure Functions (Premium, current plan)                            | €271.72                    | €300 - €500                 | €500–€3000                   |
 | WebApp Basic B1                                                    | €12.17                     | N/A                         | N/A                          |
 | WebApp Basic B2                                                    | €23.66                     | N/A                         | N/A                          |
 | WebApp Premium v3 P0V3 (less than our current production plan)     | €56.79                     | €56.79                      | €56.79 (too slow?)           |
