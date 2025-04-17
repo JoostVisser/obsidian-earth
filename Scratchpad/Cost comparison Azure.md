@@ -32,7 +32,7 @@ The regular consumption plan is slightly cheaper than the flex-consumption plan,
 but we would like to have the option of always-ready instances (and the
 performance of flex-consumption is better).
 
-#### Usage estimate
+#### Monthly usage estimate
 
 For WebApps, we pay for the server per month, so we don't need to consider any
 usage estimate for the costs. (In practice, the server will respond slower with a higher load.)
@@ -181,12 +181,19 @@ matter much, to be honest).
 
 ### Database Costs
 
-#### Database usage estimate
+#### Database monthly usage estimate
 
 Using our production data, we get a rough estimate for the usage of our database:
 - $116 000$ Request Units (RUs) per month
 - $4 MB$ of storage
 - $1$ RU/s consistent throughput
+
+| Load            | Requests Units (RU) | Storage (GB) | Consistent throughput (RU/s) |
+| --------------- | ------------------- | ------------ | ---------------------------- |
+| 1x prod. load   | 116 000             | 0.004        | 1                            |
+| 10x prod. load  | 1 160 000           | 0.04         | 10                           |
+| 100x prod. load | 11 600 000          | 0.4          | 100                          |
+
 
 <details>
     <summary> Rough estimation of database costs</summary>
@@ -259,26 +266,25 @@ Storage costs: €0.118 per GB per month.
 
 #### Results
 
-| Configuration                       | Cost/month [1x production load] | Cost/month [10x production load] |
-| ----------------------------------- | ------------------------------- | -------------------------------- |
-| CosmosDB Serverless                 | €0.03                           | €0.30                            |
-| CosmosDB autoscaling (min 100 RU/s) | €8.11                           | €8.11                            |
-| CosmosDB standard (min 400 RU/s)    | €21.63                          | €21.63                           |
-| PostgreSQL (burstable)              | €12.17                          | €12.17                           |
-| PostgreSQL (provisioned, basic)     | €133.59                         | €133.59                          |
+| Configuration                       | Cost/month [1x prod. load] | Cost/month [10x prod. load] | Cost/month [100x prod. load |
+| ----------------------------------- | -------------------------- | --------------------------- | --------------------------- |
+| CosmosDB Serverless                 | €0.03                      | €0.30                       | €3.05                       |
+| CosmosDB autoscaling (min 100 RU/s) | €8.11                      | €8.11                       | €8.11                       |
+| CosmosDB standard (min 400 RU/s)    | €21.63                     | €21.63                      | €21.63                      |
+| PostgreSQL (burstable)              | €12.17                     | €12.17                      | €12.17                      |
+| PostgreSQL (provisioned, basic)     | €133.59                    | €133.59                     | €133.59                     |
 
-(Even at 10x production load, we only get to 10 RU/s, which is significantly
-lower than the minimum 100 RU/s.)
-
+This assumes that runs will only be kept 1 month in the database. The resulting binary (plus perhaps a run-info) will be kept in blob storage for longer, if needed.
 #### Conclusion
 
 1. CosmosDB is affordable and future proof, so no need to check other databases.
 2. Future test: Consider doing provisioned autoscaling instead of serverless for a
 potential speed improvement.
+3. Even when we consider 100x production load, the database does not seem to significantly impact the final costs.
 
 ### Storage Pricing
 
-#### Usage estimate
+#### Monthly usage estimate
 
 For our current production usage, we'll use the actual estimate of 3650 runs a month, see the details of
 the [database usage estimates](#database-usage-estimate) for more detail.
@@ -288,11 +294,24 @@ require protobuf binaries to save. We're using an estimate of 5MB per protobuf
 binary (I've seen 3.4MB and 7MB binaries), resulting in:
 - $5 \text{ MB} * 2500 = 12.5 \text{ GB}$ of protobuf binaries every month
 
-For every binary, we'll assume 1 write and 1.2 read operations. Therefore
-- 1x production: 15GB, 2500 writes, 3000 reads, 18 GB read
-- 10x production: 150GB, 25000 writes, 30000 reads, 180 GB read
+**Scenario 1: Saving only the protobuf**
 
+For every binary, we'll assume 1 write and 1.2 read operations. Therefore:
 
+| Load            | Storage (GB) | #writes | #reads  | Reads (per GB) |
+| --------------- | ------------ | ------- | ------- | -------------- |
+| 1x prod. load   | 15           | 2500    | 3000    | 18             |
+| 10x prod. load  | 150          | 25 000  | 30 000  | 180            |
+| 100x prod. load | 1500         | 250 000 | 300 000 | 1 800          |
+**Scenario 2: Saving the protobuf + run_info.json**
+
+The run_info.json a file is negligible in terms of size (4 KB at most), so we'll just assume that the number reads and writes are doubled (but no significant increase in the reads per GB or storage).
+
+| Load            | Storage (GB) | #writes | #reads  | Reads (per GB) |
+| --------------- | ------------ | ------- | ------- | -------------- |
+| 1x prod. load   | 15           | 5000    | 6000    | 18             |
+| 10x prod. load  | 150          | 50 000  | 60 000  | 180            |
+| 100x prod. load | 1500         | 500 000 | 600 000 | 1 800          |
 #### Pricing
 
 For [Blob Storage](https://azure.microsoft.com/en-gb/pricing/details/storage/blobs/#pricing), there are multiple price tiers with different trade offs.
@@ -308,6 +327,7 @@ The relevant ones for us:
 ¹There exists a penalty for deleting files. If you delete it before 30 days, you will get charged for 30 days.
 ²Similar to cool, but then the penalty is for 90 days.
 #### Results
+##### Scenario 1
 
 Monthly costs (deleting artifacts after 1 month):
 
@@ -315,6 +335,8 @@ Monthly costs (deleting artifacts after 1 month):
 | ------------- | ------------------------------- | -------------------------------- |
 | Hot storage   | €0.32                           | €3.22                            |
 | Cold storage  | €0.34                           | €3.40                            |
+|               |                                 |                                  |
+|               |                                 |                                  |
 
 Monthly costs (deleting artifacts after 1 year):
 
@@ -341,7 +363,7 @@ Deleting artifacts after 3 years:
 
 ### Event Processing Costs
 
-#### Usage estimates
+#### Monthly usage estimates
 
 For our current production usage, we'll use an estimate of 4000 runs a month, see the details of
 the [database usage estimates](#database-usage-estimate) for more detail.
