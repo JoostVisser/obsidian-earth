@@ -259,13 +259,13 @@ Storage costs: €0.118 per GB per month.
 
 #### Results
 
-| Configuration                          | Cost/month [1x production load] | Cost/month [10x production load] |
-| -------------------------------------- | ------------------------------- | -------------------------------- |
-| CosmosDB Serverless                    | €0.03                           | €0.30                            |
-| CosmosDB autoscaling (min 100 RU/s)    | €8.11                           | €8.11                            |
-| CosmosDB standard (min 400 RU/s)       | €21.63                          | €21.63                           |
-| PostgreSQL (burstable)                 | €12.17                          | €12.17                           |
-| PostgreSQL (provisioned, basic)        | €133.59                         | €133.59                          |
+| Configuration                       | Cost/month [1x production load] | Cost/month [10x production load] |
+| ----------------------------------- | ------------------------------- | -------------------------------- |
+| CosmosDB Serverless                 | €0.03                           | €0.30                            |
+| CosmosDB autoscaling (min 100 RU/s) | €8.11                           | €8.11                            |
+| CosmosDB standard (min 400 RU/s)    | €21.63                          | €21.63                           |
+| PostgreSQL (burstable)              | €12.17                          | €12.17                           |
+| PostgreSQL (provisioned, basic)     | €133.59                         | €133.59                          |
 
 (Even at 10x production load, we only get to 10 RU/s, which is significantly
 lower than the minimum 100 RU/s.)
@@ -303,9 +303,10 @@ The relevant ones for us:
 | ------------ | ------------ | ------------------ | ----------------- | ------------- |
 | Hot          | €0.0204      | €0.0602            | €0.0047           | Free          |
 | Cool¹        | €0.00927     | €0.1204            | €0.0121           | €0.0093       |
+| Cold²        | €0.00334     | €0.2168            | €0.1204           | €0.0278       |
 
 ¹There exists a penalty for deleting files. If you delete it before 30 days, you will get charged for 30 days.
-
+²Similar to cool, but then the penalty is for 90 days.
 #### Results
 
 Monthly costs (deleting artifacts after 1 month):
@@ -328,6 +329,9 @@ Deleting artifacts after 3 years:
 | ------------- | ------------------------------- | -------------------------------- |
 | Hot storage   | €11.03                          | €110.32                          |
 | Cold storage  | €5.21                           | €52.07                           |
+
+
+
 
 #### Conclusion
 
@@ -364,12 +368,13 @@ a queue storage in the background.
 
 #### Results
 
-| Service               | Cost/month [1x production load] | Cost/month [10x production load] |
-| --------------------- | ------------------------------- | -------------------------------- |
-| Queue Storage         | €0.01                           | €0.13                            |
-| Event Grid            | €0.00                           | €0.00                            |
-| CosmosDB (serverless) | €0.08                           | €0.60                            |
+| Service               | Cost/month [1x prod. load] | Cost/month [10x prod. load] | Cost/month [100x prod. load] |
+| --------------------- | -------------------------- | --------------------------- | ---------------------------- |
+| Queue Storage         | €0.01                      | €0.13                       | €1.37                        |
+| Event Grid            | €0.00                      | €0.00                       | €0.39                        |
+| CosmosDB (serverless) | €0.08                      | €0.60                       | €6.15                        |
 
+For the storage, it's assumed that we delete all requests after one month.
 #### Conclusion
 
 1. All triggers are very affordable and the cost shouldn't bottleneck the choice of triggers.
