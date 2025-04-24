@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Scratchpad/Cost comparison Azure.md",
+                "file": "Daily Notes/2025-04-24 (Thu).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cost comparison Azure"
+              "title": "2025-04-24 (Thu)"
             }
           },
           {
@@ -210,8 +210,9 @@
   },
   "active": "f2896104c76e7a74",
   "lastOpenFiles": [
-    "Untitled.md",
     "Scratchpad/Cost comparison Azure.md",
+    "Daily Notes/2025-04-24 (Thu).md",
+    "Untitled.md",
     "Daily Notes/2025-04-17 (Thu).md",
     "Scratchpad/Azure Architectures.md",
     "Pasted image 20250414160336.png",
@@ -241,7 +242,6 @@
     "Daily Notes/Permanent Notes/MOC.md",
     "Daily Notes/Permanent Notes/My strategy for Obsidian.md",
     "Daily Notes/Permanent Notes/PARA-blog-post-PARA-hierarchy.webp",
-    "Daily Notes/Permanent Notes/PARA.md",
     "Scratchpad",
     "Fleeting Notes"
   ]

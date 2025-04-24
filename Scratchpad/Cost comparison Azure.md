@@ -392,6 +392,7 @@ Monthly costs (deleting artifacts after 1 month):
 | Hot storage   | €0.75                      | €7.49                       | €74.89                       |
 | Cool storage  | €0.84                      | €8.40                       | €84.02                       |
 | Cold storage  | €1.67                      | €16.70                      | €167.02                      |
+|               |                            |                             |                              |
 
 Monthly costs (deleting artifacts after 1 year):
 
