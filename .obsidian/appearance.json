@@ -1,6 +1,6 @@
 {
   "accentColor": "",
-  "cssTheme": "",
+  "cssTheme": "Things",
   "baseFontSize": 15,
   "enabledCssSnippets": [
     "increase_header_line_height"
