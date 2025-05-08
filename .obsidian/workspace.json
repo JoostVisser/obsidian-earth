@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Meeting Bart random notes.md",
+                "file": "Daily Notes/2025-05-08 (Thu).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Meeting Bart random notes"
+              "title": "2025-05-08 (Thu)"
             }
           }
         ],
@@ -211,6 +211,7 @@
   "active": "0cad67dc31117636",
   "lastOpenFiles": [
     "Daily Notes/2025-05-06 (Tue).md",
+    "Daily Notes/2025-05-08 (Thu).md",
     "Meeting Bart random notes.md",
     "Daily Notes/2025-05-02 (Fri).md",
     "Daily Notes/2025-05-01 (Thu).md",
@@ -237,7 +238,6 @@
     "Scratchpad/Songs I want to learn on the piano.md",
     "README.md",
     "Projects/Travel Blog",
-    "002 Area/Happiness.md",
     "Projects",
     "Templates",
     "Daily Notes/Permanent Notes/Income list UWV.png",
