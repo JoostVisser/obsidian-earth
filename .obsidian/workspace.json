@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6b1a2a4ce9c84843",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Daily Notes/2025-04-08 (Tue).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-04-08 (Tue)"
-            }
-          },
-          {
             "id": "0cad67dc31117636",
             "type": "leaf",
             "state": {
@@ -108,13 +94,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily Notes/2025-04-08 (Tue).md",
+                "file": "Daily Notes/2025-07-21 (Mon).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-04-08 (Tue)"
+              "title": "Outline of 2025-07-21 (Mon)"
             }
           },
           {
@@ -215,16 +201,18 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "6b1a2a4ce9c84843",
+  "active": "0cad67dc31117636",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Untitled 1.md",
+    "Daily Notes/2025-07-21 (Mon).md",
+    "Daily Notes/2025-05-13 (Tue).md",
+    "Daily Notes/2025-04-08 (Tue).md",
     "Daily Notes/2025-04-11 (Fri).md",
     "Daily Notes/2025-04-13 (Sun).md",
     "Daily Notes/2025-04-14 (Mon).md",
-    "Daily Notes/2025-07-21 (Mon).md",
     "Scratchpad/Azure Architectures.md",
     "Daily Notes/2025-05-06 (Tue).md",
-    "Daily Notes/2025-05-13 (Tue).md",
-    "Untitled 1.md",
     "Projects/Travel Blog/Lagos (Mar 17 - Mar 23).md",
     "Scratchpad/Cost comparison Azure.md",
     "Projects/Travel Blog/Caminito Del Rey (Mar 15).md",
@@ -241,8 +229,6 @@
     "Daily Notes/2025-04-24 (Thu).md",
     "Daily Notes/2025-04-17 (Thu).md",
     "Daily Notes/2025-04-10 (Thu).md",
-    "Daily Notes/2025-04-09 (Wed).md",
-    "Daily Notes/2025-04-08 (Tue).md",
     "Pasted image 20250414160336.png",
     "Projects/Travel Blog",
     "Projects",
