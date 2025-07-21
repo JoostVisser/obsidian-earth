@@ -2,7 +2,5 @@
   "accentColor": "",
   "cssTheme": "Blue Topaz",
   "baseFontSize": 15,
-  "enabledCssSnippets": [
-    "increase_header_line_height"
-  ]
+  "enabledCssSnippets": []
 }
