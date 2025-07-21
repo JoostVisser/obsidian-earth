@@ -1,5 +1,6 @@
 {
   "obsidian-prism-theme@@color-schemes-dt": "pt-color-scheme-raven-dt",
   "obsidian-prism-theme@@pt-fade-inactive-tabs": true,
-  "blue-topaz-theme@@print-h1-color@@dark": "#C0C202"
+  "blue-topaz-theme@@print-h1-color@@dark": "#C0C202",
+  "blue-topaz-theme@@rainbow-checklist": true
 }

@@ -48,6 +48,16 @@
               "icon": "lucide-file",
               "title": "2025-05-13 (Tue)"
             }
+          },
+          {
+            "id": "a897478fdd461db0",
+            "type": "leaf",
+            "state": {
+              "type": "style-settings",
+              "state": {},
+              "icon": "gear",
+              "title": "Style Settings"
+            }
           }
         ],
         "currentTab": 2
@@ -188,6 +198,16 @@
               "state": {},
               "icon": "spreadsheet",
               "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "327093e5cc5c9ec7",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
         ]
