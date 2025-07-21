@@ -48,19 +48,9 @@
               "icon": "lucide-file",
               "title": "2025-05-13 (Tue)"
             }
-          },
-          {
-            "id": "c327d8ebc116db56",
-            "type": "leaf",
-            "state": {
-              "type": "style-settings",
-              "state": {},
-              "icon": "gear",
-              "title": "Style Settings"
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -218,10 +208,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c327d8ebc116db56",
+  "active": "0cad67dc31117636",
   "lastOpenFiles": [
-    "Untitled 1.md",
+    "Daily Notes/2025-04-14 (Mon).md",
     "Daily Notes/2025-05-13 (Tue).md",
+    "Untitled 1.md",
     "Daily Notes/2025-05-06 (Tue).md",
     "Projects/Travel Blog/Lagos (Mar 17 - Mar 23).md",
     "Scratchpad/Cost comparison Azure.md",
@@ -239,7 +230,6 @@
     "Daily Notes/2025-04-29 (Tue).md",
     "Daily Notes/2025-04-24 (Thu).md",
     "Daily Notes/2025-04-17 (Thu).md",
-    "Daily Notes/2025-04-14 (Mon).md",
     "Daily Notes/2025-04-13 (Sun).md",
     "Daily Notes/2025-04-11 (Fri).md",
     "Daily Notes/2025-04-10 (Thu).md",
