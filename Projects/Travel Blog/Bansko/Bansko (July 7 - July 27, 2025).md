@@ -1,13 +1,10 @@
-Basko calendar:
+Bansko calendar:
 - Week 1: Monday July 7 -- Sunday July 13
 - Week 2: Monday July 14 -- Sunday July 20
 - Week 3: Monday July 21 -- Sunday July 28
 
 Trips of note:
 - 
-
-
-
 
 
 ### Week 1
@@ -27,7 +24,7 @@ Schedule:
 Schedule:
 - Mon 14-07: 
 - Tue 15-07: Family dinner: Cookin' some chicken curry <3
-- Wed 16-07: Movie night 1: Terminator
+- Wed 16-07: During the day: relax & read. Night: Movie night 1: Terminator
 - Thu 17-07: Michele dinner #2
 - Fri 18-07: Skipped first part, but still hung out with fellow chads at the bar/club.
 - Sat 19-07: Thessaloniki day 1
