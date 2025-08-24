@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Travel trips/Recommended places.md",
+                "file": "Projects/Travel trips/Japan trip.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Recommended places"
+              "title": "Japan trip"
             }
           }
         ]
@@ -203,8 +203,8 @@
   },
   "active": "5e3bce02bf492f76",
   "lastOpenFiles": [
-    "Projects/Travel trips/Japan trip.md",
     "Projects/Travel trips/Recommended places.md",
+    "Projects/Travel trips/Japan trip.md",
     "Daily Notes/2025-08-24 (Sun).md",
     "Projects/Travel trips",
     "Daily Notes/2025-08-19 (Tue).md",

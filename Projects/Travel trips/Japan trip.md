@@ -6,6 +6,8 @@ The two parts that'll determine my Japan trip:
 
 
 For co-working/co-living spots, here are spots I can stay for two weeks:
-- Kotori co-working and hostel: https://www.kotori-japan.com/en/
-    - Also has a pop-up co-living for a month:
+- Shikoku: Kotori co-working and hostel: https://www.kotori-japan.com/en/
+    - Also has a pop-up co-living for a month: https://www.altcoliving.com/alt_popup/
+      Focus on meditation and connecting with locals
+    - Can probably work 24/7 from this place
 - 
