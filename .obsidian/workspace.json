@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily Notes/2025-09-30 (Tue).md",
+                "file": "Daily Notes/2025-09-25 (Thu).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-09-30 (Tue)"
+              "title": "2025-09-25 (Thu)"
+            }
+          },
+          {
+            "id": "fa95d4a21a0ff730",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Daily Notes/2025-10-13 (Mon).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-10-13 (Mon)"
             }
           },
           {
@@ -35,7 +49,8 @@
               "title": "Japan trip"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -215,10 +230,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5e3bce02bf492f76",
+  "active": "fa95d4a21a0ff730",
   "lastOpenFiles": [
-    "Daily Notes/2025-09-25 (Thu).md",
+    "Daily Notes/2025-10-13 (Mon).md",
     "Daily Notes/2025-09-30 (Tue).md",
+    "Projects/Travel trips/Japan trip.md",
+    "Daily Notes/2025-09-25 (Thu).md",
     "Daily Notes/2025-09-23 (Tue).md",
     "Daily Notes/2025-09-16 (Tue).md",
     "Daily Notes/2025-09-18 (Thu).md",
@@ -230,7 +247,6 @@
     "Daily Notes/2025-09-02 (Tue).md",
     "Daily Notes/2025-09-03 (Wed).md",
     "Daily Notes/2025-09-01 (Mon).md",
-    "Projects/Travel trips/Japan trip.md",
     "Daily Notes/2025-08-29 (Fri).md",
     "Daily Notes/2025-08-28 (Thu).md",
     "Daily Notes/2025-08-26 (Tue).md",
@@ -242,7 +258,6 @@
     "Daily Notes/2025-08-18 (Mon).md",
     "Daily Notes/2025-08-14 (Thu).md",
     "Daily Notes/2025-08-07 (Thu).md",
-    "Projects/Travel trips/Recommended places.md",
     "Projects/Travel trips",
     "Projects/Travel Blog/Bansko",
     "Pasted image 20250414160336.png",
