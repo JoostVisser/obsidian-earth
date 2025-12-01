@@ -30,3 +30,9 @@ Mapje in repo, release, OpenAPI json.
 - Major version for Parameters
 - Versioning per endpoint
 - Maintain two versioning when we migrate.
+
+
+
+Managed identity:
+- Service Principal <-- system assigned,
+- 
