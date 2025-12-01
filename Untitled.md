@@ -17,4 +17,6 @@ Different strategies:
 - Deploy multiple routing versions simultaneously
     - "Look-up-table" --> Get right Azure endpoint
     - Think of strategies of what to deploy
-    - 
+
+
+v1 is relevant aan v1Paramversie
