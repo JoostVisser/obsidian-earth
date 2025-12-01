@@ -5,3 +5,6 @@ Het is juist goed dat je een generalist bent:
 
 
 Integrator
+
+
+Kijk eens rond naar wat voor soort werk er is met waarbij je mee kan reizen.
