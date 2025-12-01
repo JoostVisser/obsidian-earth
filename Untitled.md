@@ -20,3 +20,7 @@ Different strategies:
 
 
 v1 is relevant aan v1Paramversie
+
+
+
+Mapje in repo, release, OpenAPI json.
