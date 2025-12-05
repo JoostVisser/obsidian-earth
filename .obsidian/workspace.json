@@ -41,20 +41,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily Notes/2025-12-01 (Mon).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-12-01 (Mon)"
-            }
-          },
-          {
-            "id": "df657546c5580e7d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Daily Notes/2025-12-05 (Fri).md",
                 "mode": "source",
                 "source": false
@@ -78,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -258,34 +244,34 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "df657546c5580e7d",
+  "active": "ee1975b199b8e478",
   "lastOpenFiles": [
     "Daily Notes/2025-12-04 (Thu).md",
     "Daily Notes/2025-12-05 (Fri).md",
-    "Daily Notes/2025-12-01 (Mon).md",
     "Daily Notes/2025-12-02 (Tue).md",
-    "Untitled.md",
+    "Daily Notes/2025-12-01 (Mon).md",
     "Projects/Travel trips/Japan trip.md",
+    "Daily Notes/2025-09-10 (Wed).md",
+    "Daily Notes/2025-09-08 (Mon).md",
+    "Daily Notes/2025-09-04 (Thu).md",
+    "Daily Notes/2025-09-03 (Wed).md",
+    "Daily Notes/2025-09-02 (Tue).md",
+    "Daily Notes/2025-09-01 (Mon).md",
+    "Daily Notes/2025-08-29 (Fri).md",
+    "Daily Notes/2025-08-28 (Thu).md",
+    "Daily Notes/2025-08-26 (Tue).md",
+    "Daily Notes/2025-08-25 (Mon).md",
+    "Daily Notes/2025-08-24 (Sun).md",
+    "Daily Notes/2025-08-22 (Fri).md",
+    "Daily Notes/2025-08-21 (Thu).md",
+    "Daily Notes/2025-08-19 (Tue).md",
+    "Daily Notes/2025-08-18 (Mon).md",
+    "Daily Notes/2025-08-14 (Thu).md",
+    "Untitled.md",
     "Daily Notes/2025-11-02 (Sun).md",
     "Daily Notes/2025-11-04 (Tue).md",
     "Daily Notes/2025-10-28 (Tue).md",
     "Daily Notes/2025-10-27 (Mon).md",
-    "Daily Notes/2025-05-13 (Tue).md",
-    "Daily Notes/2025-10-20 (Mon).md",
-    "Daily Notes/2025-10-16 (Thu).md",
-    "Daily Notes/2025-10-17 (Fri).md",
-    "Daily Notes/2025-10-14 (Tue).md",
-    "Daily Notes/2025-10-13 (Mon).md",
-    "Daily Notes/2025-09-25 (Thu).md",
-    "Daily Notes/2025-09-30 (Tue).md",
-    "Daily Notes/2025-09-23 (Tue).md",
-    "Daily Notes/2025-09-16 (Tue).md",
-    "Daily Notes/2025-09-18 (Thu).md",
-    "Daily Notes/2025-09-15 (Mon).md",
-    "Daily Notes/2025-09-12 (Fri).md",
-    "Daily Notes/2025-09-10 (Wed).md",
-    "Daily Notes/2025-09-08 (Mon).md",
-    "Daily Notes/2025-09-04 (Thu).md",
     "Projects/Travel trips",
     "Projects/Travel Blog/Bansko",
     "Pasted image 20250414160336.png",
