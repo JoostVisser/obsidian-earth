@@ -8,89 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5e3bce02bf492f76",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Daily Notes/2025-09-25 (Thu).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-09-25 (Thu)"
-            }
-          },
-          {
-            "id": "fa95d4a21a0ff730",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Daily Notes/2025-11-04 (Tue).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-11-04 (Tue)"
-            }
-          },
-          {
-            "id": "ee1975b199b8e478",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Daily Notes/2025-12-23 (Tue).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-12-23 (Tue)"
-            }
-          },
-          {
-            "id": "310f333916c42253",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/Travel trips/Japan trip.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Japan trip"
-            }
-          },
-          {
-            "id": "46ddd1f95eac48fc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Daily Notes/2026-01-20 (Tue).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-01-20 (Tue)"
-            }
-          },
-          {
             "id": "9ffa4a4aa3ab1ae7",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.11.4"
+                "file": "Daily Notes/2026-01-26 (Mon).md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.4"
+              "icon": "lucide-file",
+              "title": "2026-01-26 (Mon)"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -270,10 +201,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "46ddd1f95eac48fc",
+  "active": "9ffa4a4aa3ab1ae7",
   "lastOpenFiles": [
-    "Daily Notes/2026-01-09 (Fri).md",
+    "Daily Notes/2026-01-26 (Mon).md",
+    "Untitled 1.md",
     "Daily Notes/2026-01-20 (Tue).md",
+    "Daily Notes/2026-01-09 (Fri).md",
     "Daily Notes/2026-01-08 (Thu).md",
     "Daily Notes/2026-01-05 (Mon).md",
     "Daily Notes/2025-12-22 (Mon).md",
@@ -296,8 +229,6 @@
     "Daily Notes/2025-09-03 (Wed).md",
     "Daily Notes/2025-09-02 (Tue).md",
     "Daily Notes/2025-09-01 (Mon).md",
-    "Daily Notes/2025-08-29 (Fri).md",
-    "Daily Notes/2025-08-28 (Thu).md",
     "Projects/Travel trips",
     "Projects/Travel Blog/Bansko",
     "Pasted image 20250414160336.png",
