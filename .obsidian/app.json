@@ -5,5 +5,6 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "Notes/Fleeting Notes",
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "./"
+  "attachmentFolderPath": "./",
+  "openBehavior": "daily"
 }
