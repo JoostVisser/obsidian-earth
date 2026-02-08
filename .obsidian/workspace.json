@@ -34,21 +34,9 @@
               "icon": "lucide-file",
               "title": "2026-02-08 (Sun)"
             }
-          },
-          {
-            "id": "1338cb82eb56c958",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.7"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.7"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -228,7 +216,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1338cb82eb56c958",
+  "active": "37d4c7ee8abea8bb",
   "lastOpenFiles": [
     "Daily Notes/2026-02-05 (Thu).md",
     "Daily Notes/2026-02-08 (Sun).md",
