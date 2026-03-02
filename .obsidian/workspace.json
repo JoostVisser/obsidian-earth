@@ -25,12 +25,14 @@
             "id": "ba65e5dfd303795b",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.12.4"
+                "file": "Daily Notes/2026-03-02 (Mon).md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.12.4"
+              "icon": "lucide-file",
+              "title": "2026-03-02 (Mon)"
             }
           },
           {
