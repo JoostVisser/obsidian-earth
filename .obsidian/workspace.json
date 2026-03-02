@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "ba65e5dfd303795b",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.4"
+            }
+          },
+          {
             "id": "37d4c7ee8abea8bb",
             "type": "leaf",
             "state": {
@@ -35,7 +47,8 @@
               "title": "Jan 29 (Thu) - Feb 1 (Sun)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -215,7 +228,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9ffa4a4aa3ab1ae7",
+  "active": "ba65e5dfd303795b",
   "lastOpenFiles": [
     "Daily Notes/2026-02-27 (Fri).md",
     "Daily Notes/2026-03-02 (Mon).md",
